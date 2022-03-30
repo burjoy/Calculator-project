@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kalkulator Web Based</title>
+    <link rel="stylesheet" href="calc-style.css">
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input type="text" disabled class="calculator-screen" id="d">
+      <div class="keys">
+        <div class="row">
+          <button class="clear" onclick='clear_all("")'>AC</button>
+          <button class="modulo" onclick='action("%")'>%</button>
+          <button class="operator" onclick='action("/")'>&divide;</button>
+        </div>
+
+        <div class="row">
+          <button class="number" onclick='action("7")'>7</button>
+          <button class="number" onclick='action("8")'>8</button>
+          <button class="number" onclick='action("9")'>9</button>
+          <button class="operator" onclick='action("*")'>&times;</button>
+        </div>
+
+        <div class="row">
+          <button class="number" onclick='action("4")'>4</button>
+          <button class="number" onclick='action("5")'>5</button>
+          <button class="number" onclick='action("6")'>6</button>
+          <button class="operator" onclick='action("-")'>-</button>
+        </div>
+
+        <div class="row">
+          <button class="number" onclick='action("1")'>1</button>
+          <button class="number" onclick='action("2")'>2</button>
+          <button class="number" onclick='action("3")'>3</button>
+          <button class="operator" onclick='action("+")'>+</button>
+        </div>
+
+        <div class="row">
+          <button class="number zero-btn" onclick='action("0")'>0</button>
+          <button class="decimal" onclick='action(".")'>.</button>
+          <button class="equal-sign" onclick=equal()>=</button>
+        </div>
+
+        <script type="text/javascript" src="calc.js"></script>
+
+      </div>
+    </div>
+  </body>
+</html>
